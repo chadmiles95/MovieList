@@ -1,0 +1,166 @@
+body{
+    background: black;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+html, body, h1, h2, h3, h4, p, input, button{
+    margin: 0;
+    padding: 0;
+    }
+h1{
+    font-size: 3em;
+}
+#title, #rating, #length, #genre{
+    
+    padding-right: 2em;
+    align-self: flex-start;
+    
+}
+#header{
+    background-size: cover;
+    background-image: url("images/header.png");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8em 4em 8em 4em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#search{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#movieInput{
+    color: white;
+    width: 20em;
+    background-color:#36454F;
+    border-top-left-radius: .4em;
+    border-bottom-left-radius:.4em;
+    width: 60%;
+    padding: .4em .4em;
+    margin: 0;
+    border: none;
+}
+#movieInput.selected{
+   width: 20em;
+    background-color:#36454F;
+    border-top-left-radius: .4em;
+    border-bottom-left-radius:.4em;
+    color: white;
+    
+    padding: .4em .4em;
+    margin: 0;
+    border: none; 
+}
+#searchButton{
+    text-align: center;
+    font-size: .95em;
+    background-color: #696969;
+    color: white;
+    border-top-right-radius: .4em;
+    border-bottom-right-radius:.4em;
+    
+    padding: .4em 1.7em .4em 1.7em;
+    margin: 0;
+    border: none;
+}
+#movieListDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:white;
+    padding: 2em 0;
+    width: 100%;
+}
+#movieList{
+    display: flex;
+    flex-direction: row;
+    margin: 1em 6em;
+       
+}
+#watchList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 5em; 
+    
+}
+#moviePoster{
+    object-fit: contain;
+    width: 10em;
+    height: 10em;
+}
+#movieInfo{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 2em 2em;
+}
+#movieInfoPartTwo{
+    border: 1px solid orange;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+}
+#movieInfoPartThree{
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start ;
+    padding: 0 12em;
+     
+}
+#removeButton{
+    background: none;
+    padding: 0;
+    height: 2em;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+#addButton{
+    background: none;
+    padding: 0;
+    height: 2em;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+#movieTits{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 1em 1em;
+    padding: 0em 1em;
+    justify-content: space-between;
+    }
+#watchList{
+    color: white;
+}
+@media (max-width: 600px){
+ 
+ #movieListDiv{
+    font-size: .6em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:white;
+    padding: 2em 0;
+    }
+#movieList{
+    padding: 0;
+    margin: 0;
+}
+}
